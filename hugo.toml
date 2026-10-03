@@ -1,0 +1,34 @@
+baseURL = 'https://brasil.ziegel.me/'
+languageCode = 'en-us'
+title = 'Brasil Visit in 2026'
+theme = 'gallery'
+copyright = '© 2026 by Ziegel. All rights reserved.'
+defaultContentLanguage = 'en'
+disableKinds = ['taxonomy']
+enableRobotsTXT = true
+timeZone = 'Europe/Berlin'
+timeout = '120s'
+
+[params]
+    defaultTheme = 'dark'
+    description = 'Pictures and videos from our visit of Fortaleza and Sao Paulo'
+    title = 'Brasil 2026'
+    
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  [imaging.exif]
+    disableDate = true
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[module]
+  [module.hugoVersion]
+    min = "0.121.2"
+  [[module.imports]]
+    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
+
