@@ -1,7 +1,6 @@
 baseURL = 'https://brasil.ziegel.me/'
 languageCode = 'en-us'
 title = 'Brasil Visit in 2026'
-theme = 'gallery'
 copyright = '© 2026 by Ziegel. All rights reserved.'
 defaultContentLanguage = 'en'
 disableKinds = ['taxonomy']
