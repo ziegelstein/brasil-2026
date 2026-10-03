@@ -39,14 +39,14 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version-file: go.mod
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
